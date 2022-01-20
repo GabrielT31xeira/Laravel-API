@@ -23,4 +23,9 @@ class Livro extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function emprestado()
+    {
+        return $this->belongsTo(Emprestado::class);
+    }
 }
